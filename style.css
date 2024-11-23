@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+header{
+    position: relative;
+    margin: 20px 50px;
+    bottom: 90px;
+    transition: bottom 1s ease-in-out;
+}
+header.visible{
+    bottom: 0px;
+}
+.scl {
+    scale:0;
+    /* scale:1; */
+    transition: scale 1s ease-in-out;
+}
+.scl.visible {
+    scale:1;
+}
+.slide {
+    position: relative;
+    left: 700px;
+    transition: left 1s ease-in-out;
+}
+.slide.visible {
+    left: 0px;
+}
+input{
+    scale:1;
+    transition: scale 1s ease-in-out;
+}
+input:hover{
+    scale: 1.02;
+}
+.bld{
+    position: relative;
+    transition: left 0.5s ease-in-out;
+    cursor: pointer;
+}
+.bld:hover{
+    scale: 1.1;
+    z-index:2;
+}
+.hvr{
+    scale: 1;
+    transition: scale 0.2s linear;
+}
+.hvr:hover{
+    scale: 1.1;
+    z-index: 2;
+}
+header nav{
+    position: relative;
+    display: flex;
+    text-align: center;
+    /* border: solid 2px white; */
+    width: 100%;
+    height: 50px;
+}
+nav img{
+    height: 35px;
+    width: 140px;
+}
+nav ul {
+    width: 70%;
+    font-family:system-ui,'Segoe UI',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 50px;
+    padding-left: 180px;
+    
+}
+nav ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: rgb(177, 170, 170);
+}
+nav div{
+    width: 30%;
+    font-family:system-ui,'Segoe UI',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    /* cursor: pointer; */
+}
+nav div img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+header section {
+    margin-top: 15px;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+main section img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.bkdminpt{
+    position: relative;
+    top: 85%;
+    width: 80%;
+    height: 50px;
+    border-radius: 30px;
+    padding: 0 0 0 30px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid black;
+    margin-left: 30px;
+}
+::placeholder {
+    color: black;
+    font-family:system-ui;
+    font-size: 20px;
+  }
+#frwd{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    top: 86.5%;
+    right: 50px;
+}
+input
+{
+    color: black;
+    font-family:system-ui;
+    font-size: 20px;
+}
+#rdo{
+    accent-color: black;
+}
