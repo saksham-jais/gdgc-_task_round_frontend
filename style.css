@@ -1,3 +1,106 @@
+.burger {
+    position: absolute;
+    cursor: pointer;
+    right: 45px;
+    width: 30px;
+    display: none;
+    z-index: 1;
+}
+.line {
+    width: 50px;
+    background-color: white;
+    height: 6px;
+    margin: 5px 3px;
+}
+.scnd1{
+    height: 0px;
+    display: none;
+    transition: height 1s ease-in-out;
+}
+@media only screen and (max-width: 435px){
+    .burger:hover {
+        /* height: 100px; */
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    header nav ul {display: none;}
+    #dv {display: none;}
+
+    header{
+        margin: 20px 10px !important ;
+        /* display: none; */
+    }
+    main{
+        margin: 10px 10px !important;
+    }
+    .fstsectn{
+        /* background-color:blue ; */
+        flex-direction: column;
+        padding: 0px !important;
+        margin: 0px !important;
+        width: 100%!important;
+        height: 90vh !important;
+        /* display: none !important; */
+    }
+    .scl {
+        width: 100% !important;
+        height: 50% !important;
+        /* background-color: red; */
+    }
+    .scl div{
+        font-size: 40px !important;
+        line-height: 55px !important;
+    }
+    .slide{
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        height: 50% !important;
+    }
+    .ScndScn{
+        flex-direction: column;
+        height: 90vh !important;
+}
+    .ScndScn1{width: 100% !important;
+        padding: 0 0px 0 0px !important;}
+    .ScndScn2{
+        padding: 0 0px 0 0px !important;
+        width: 100% !important;
+        /* background-color: red; */
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .hvr{
+        width: 70% !important;
+        height: 30% !important;
+    }
+    #hvr1 p{
+        height: 30% !important;
+    }
+    #hvr1 img{
+        top : 0 !important;
+        left : 0 !important;
+    }
+    #hvr2 p{
+        top: -10px !important;
+        font-size: 20px !important;
+        line-height: 25px !important;
+    }
+    #hvr3 :first-child{padding: 10px 30px !important;}
+    #hvr3 :nth-child(2){
+        font-size: 50px !important;
+        top: 0 !important;
+    }
+    #hvr3 :nth-child(2) sup{
+        position: relative;
+        right: 30px;
+    }
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -101,7 +204,7 @@ nav div img {
     height: 50px;
     cursor: pointer;
 }
-header section {
+.scnd2 {
     margin-top: 15px;
     width: 100%;
     height: 1px;
